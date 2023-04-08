@@ -1,0 +1,232 @@
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+main {
+font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 5vh;
+    margin: auto;
+}
+
+
+nav {
+display: flex;
+justify-content: flex-end;
+}
+
+nav a {
+    color: #93C6E7;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+nav a:hover {
+  background-color: #93C6E7;
+  color: white;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.first-page {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    flex: 1;
+}
+.introduction {
+    flex: 1;
+}
+.cover {
+ flex: 1;
+ display: flex;
+ justify-content: center; height: 60vh;
+}
+
+h1{
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.name {
+    color: #93C6E7;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+
+}
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+.cta-about {
+    border: 2px solid 	#94BFCD;
+    background: transparent;
+    color:	#94BFCD;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-portfolio {
+    background:	#94BFCD;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+.cover img {
+    height: 75%;
+    animation: drop 1.5s ease;
+}
+
+.big-circle {
+    position :absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    height: 80%;
+}
+.medium-circle {
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+.second-page {
+    margin: 5%;
+    width: 90%;
+    margin-top: 5%;
+    min-height: 80vh;
+}
+.about {
+    display: flex;
+    flex: 2;
+}
+
+h2 {
+    margin-left: 30%;
+    font-size: 200px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.about p {
+    margin-top: 5%;
+    height: 50%;
+    width:50%;
+    padding: 50px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.about-image {
+    margin-top: 5%;
+    width: 60%;
+    padding: 40px;
+}
+
+.about-image img {
+    animation: drop 1.5s ease;
+}
+
+.third-page {
+    height: 100%;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+aside {
+    margin-top: 1%;
+    flex: 1;
+    background-color: #CACACA;
+    padding:20px;
+    text-align: center;
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+.projects {
+    background-color: #fff;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  /* TODO: Add properties to the cards to achieve the required look */
+  .card {
+    border-width: 50px;
+    border-radius: 30px;
+    box-shadow: 5px 10px;
+    padding: 200px;
+    margin: 20px;
+  }
+
+
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translate(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .laptop-select {
+        bottom: 5px;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover img {
+        height: 80%;
+    }
+    .small-circle,
+    .big-circle, {
+    opacity: 0.2;
+    }
+}
