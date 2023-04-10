@@ -57,7 +57,7 @@ h1{
     font-weight: bold;
 }
 
-.name {
+.header-color {
     color: #93C6E7;
 }
 .intro-text p{
@@ -86,11 +86,12 @@ h1{
     font-size: 16px;
     border: none;
     color: white;
-    margin: 30px 0px 0px 30px;
+    margin: 30px 0px 0px 0px;
 }
 .cover img {
     height: 75%;
     animation: drop 1.5s ease;
+    opacity: 0.5;
 }
 
 .big-circle {
@@ -119,7 +120,7 @@ h1{
 }
 .about {
     display: flex;
-    flex: 2;
+    flex: wrap;
 }
 
 h2 {
@@ -131,21 +132,28 @@ h2 {
 
 .about p {
     margin-top: 5%;
-    height: 50%;
-    width:50%;
-    padding: 50px;
     font-size: 22px;
     color: #585772;
 }
 
 .about-image {
-    margin-top: 5%;
-    width: 60%;
-    padding: 40px;
+padding-right: 10px;
 }
 
 .about-image img {
     animation: drop 1.5s ease;
+}
+
+
+.work {
+    margin-left: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    color: white;
+    background-color: #CACACA;;
 }
 
 .third-page {
@@ -157,35 +165,160 @@ h2 {
     height: 100%;
 }
 
-aside {
-    margin-top: 1%;
-    flex: 1;
-    background-color: #CACACA;
-    padding:20px;
-    text-align: center;
-    color: white;
-    list-style: none;
-    text-transform: uppercase;
-  }
-
 .projects {
-    background-color: #fff;
-    padding: 100px;
+    flex: 4;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
   }
   
-  /* TODO: Add properties to the cards to achieve the required look */
+
   .card {
-    border-width: 50px;
+    border-width: 20px;
     border-radius: 30px;
     box-shadow: 5px 10px;
-    padding: 200px;
+    padding: 10px;
     margin: 20px;
+    flex: 0 0 300px;
   }
 
+  .card img {
+    width: 500px;
+    height:500px;
+  }
+
+  #html {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+#css {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+#javascript {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+  .contact {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    flex: 1;
+  }
+
+
+  form {
+    max-width: 400px;
+  }
+  
+  form h3 {
+    font-size: 150%;
+  }
+  
+  form p {
+    margin: 3% 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #93C6E7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* It styles the drop down menu selector/image */
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  
+  .text-input {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .text-input, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+  
+  .text-input:hover, .checkbox:hover, 
+  select:hover, button:hover {
+    box-shadow: 0 0 5px #999;
+  }
+  
+  /* when the user clicks or taps this element, the changes documented in the style sheet occur */
+  .text-input:focus {
+    border-right-width: 5px;
+    background-color: #ADD8E6;
+  }
+  
+  /* :placeholder-shown CSS pseudo-class represents any <input> or <textarea> element that is currently displaying placeholder text*/
+  .text-input:placeholder-shown {
+    border-style: dashed;
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+  }
+  
+  .flex-row input {
+    margin-right: 2%;
+  }
+  
+  /* What the checkbox elements looks like after before being checked */
+  .checkbox:checked + label {
+    color: red;
+    font-style: italic;
+  }
+  
+  /* affacts the checkbox elements, detailing what will happen when the check box is ticked */
+  .checkbox:checked + label::after {
+    margin-left: 10px;
+    font-size: 90%;
+    content: "(thanks!)";
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #93C6E7;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
 
 
 @keyframes drop {
@@ -200,33 +333,47 @@ aside {
 }
 
 @media screen and (max-width: 1024px) {
-    .presentation {
+    .first-page,
+    .about {
         flex-direction: column;
+        
     }
     .introduction {
         margin-top: 5vh;
         text-align: center;
     }
-    .intro-text h1 {
-        font-size: 30px;
+    .intro-text h1, h2 {
+        font-size: 100px;
     }
-    .intro-text p {
-        font-size: 18px;
+    .intro-text p,
+     {
+        padding-top: 20%;
+        font-size: 22px;
     }
     .cta {
-        padding: 10px 0px 0px 0px;
+    display: column;
+    margin: 0 auto;
+    max-width: 50%;
     }
-    .laptop-select {
-        bottom: 5px;
-        right: 50%;
-        width: 50%;
-        transform: translate(50%, 5%);
+    
+    .about-image img {
+        display: column;
+        height: 500px;
     }
+
+    }
+    .about p {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+   
     .cover img {
-        height: 80%;
+        display: column;
+        height: 500px;
     }
     .small-circle,
     .big-circle, {
     opacity: 0.2;
     }
-}
+
