@@ -40,8 +40,6 @@ a {
     width: 90%;
     margin: auto;
     min-height: 80vh;
-    align-items: center;
-    flex: 1;
 }
 .introduction {
     flex: 1;
@@ -153,12 +151,22 @@ padding-right: 10px;
     width: 20%;
     height: 100%;
     color: white;
-    background-color: #CACACA;;
+    background-color: grey;
+}
+
+h3 {
+  font-size: 50px;
+  margin-left: 9%;
 }
 
 .third-page {
     height: 100%;
 }
+.work-box {
+  margin-bottom: 32px;
+}
+
+
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -182,12 +190,48 @@ padding-right: 10px;
     padding: 10px;
     margin: 20px;
     flex: 0 0 300px;
+    cursor: pointer;
+    
   }
 
   .card img {
     width: 500px;
     height:500px;
+    opacity: 0.5;
+    border-radius: 30px;
+    transition: transform .2s;
   }
+
+  .card img:hover {
+    opacity: 1;
+    transform:scale(1.5);
+  }
+
+
+  span[data-descr] {
+    position: relative;
+    font-size: 30px;
+    color: black;
+    cursor: cursor;
+    font-weight:bold;
+    padding-bottom: 10px;
+  }
+
+  span[data-descr]:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    font-weight: bold;
+    left: 0px;
+    bottom: 24px;
+    min-width: 200px;
+    border: 3px grey solid;
+    background-color: white;
+    padding: 12px;
+    color: black;
+    font-size: 50%;
+  }
+
+
 
   #html {
     display: block;
@@ -208,10 +252,11 @@ padding-right: 10px;
 }
   .contact {
     display: flex;
-    width: 30%;
+    width: 90%;
     margin: auto;
     min-height: 80vh;
-    align-items: center;
+}
+.conclusion {
     flex: 1;
   }
 
