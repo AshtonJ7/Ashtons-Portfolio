@@ -1,4 +1,4 @@
-# week2-portfolio-project
+# Ashtons-Portfolio
 
 ## User Story
 
