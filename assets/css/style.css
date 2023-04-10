@@ -250,19 +250,43 @@ h3 {
     margin: 10px auto;
     max-width: 150px;
 }
-  .contact {
+  .fourth-page {
+    height: 100%;
     display: flex;
     width: 90%;
     margin: auto;
     min-height: 80vh;
 }
-.conclusion {
+.contact {
     flex: 1;
   }
 
+  .contact h4 {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  }
+
+  .social-media {
+   float: right;
+   
+  }
+  .social-media p {
+    padding-top: 10%;
+  font-size: 20px;
+  }
+
+  .social-media img:hover {
+    cursor: pointer;
+
+  }
 
   form {
-    max-width: 400px;
+    max-width: 500px;
+    margin-left: 20%;
+    overflow: hidden;
+
   }
   
   form h3 {
@@ -270,7 +294,7 @@ h3 {
   }
   
   form p {
-    margin: 3% 0;
+    margin: 10% 0;
   }
   
   label {
@@ -302,6 +326,7 @@ h3 {
     max-width: 100%;
   }
   
+
   .text-input, select {
     padding: 1%;
     outline: none;
@@ -326,30 +351,13 @@ h3 {
   
   .flex-row {
     display: flex;
-    align-items: center;
   }
   
   .flex-row select {
-    flex: 1 0 0;
+
     margin-left: 2%;
   }
   
-  .flex-row input {
-    margin-right: 2%;
-  }
-  
-  /* What the checkbox elements looks like after before being checked */
-  .checkbox:checked + label {
-    color: red;
-    font-style: italic;
-  }
-  
-  /* affacts the checkbox elements, detailing what will happen when the check box is ticked */
-  .checkbox:checked + label::after {
-    margin-left: 10px;
-    font-size: 90%;
-    content: "(thanks!)";
-  }
   
   footer {
     display: flex;
