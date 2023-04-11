@@ -13,16 +13,16 @@
 <body>
   <!-- Header -->
   <header>
+    <nav>
+      <a href="#second-page">About Me</a>
+      <a href="#third-page">Work</a>
+      <a href="#fourth-page">Contact Me</a>
+    </nav>
 
   </header>
 
   <!-- Navbar -->
-  <nav>
-    <a href="#">About Me</a>
-    <a href="#">Work</a>
-    <a href="#">Contact Me</a>
-    <a href="#">Resume</a>
-  </nav>
+
 
   <!-- Body -->
   <main>
@@ -34,21 +34,21 @@
           </div>
        
           <div class="cta">
-              <button class="cta-about">About Me</button>
-              <button class="cta-portfolio">PORTFOLIO</button>
+            <a href="#second-page"><button class="cta-about">About Me</button></a>
+            <a href="#third-page"><button class="cta-portfolio">PORTFOLIO</button></a>
           </div>
         </div>
       <div class="cover">
-          <img src="./assets/images/profile.jpg" alt = "Photo of Ashton"/>
+          <img src="./assets/images/profile2.jpg" alt = "Photo of Ashton"/>
       </div>
     </div>
 
-  <img class = "big-circle" src="./assets/images/big-eclipse.svg">
-  <img class = "medium-circle" src="./assets/images/mid-eclipse.svg">
+  <img class = "big-circle" src="./assets/images/mid-eclipse.svg">
+  <img class = "medium-circle" src="./assets/images/small-eclipse.svg">
 </section>
  
 
-<section class="second-page">
+<section id = "second-page">
     <h2>About <span class ="header-color">Me</span></h2>
        <div class ="about">
                <div class="about-image">
@@ -90,16 +90,16 @@
       </section>  
   </aside>
 
-  <section class="third-page">
+  <section id="third-page">
     <h2><span class ="header-color">Pro</span>jects</h2>
     <section class="project-list">
   <!-- Product Cards -->
   <div class="projects">
     <section class="card">
       <span data-descr="A website created for a digital marketing agency.
-      Smooth scrolling and easy to navigate, this site was created using HTML & tailwind CSS">Digital Marketing Agency</span>
-      <img src="./assets/images/project1.png" alt="" />
-
+      Smooth scrolling and easy to navigate, this site was created using HTML & CSS">Digital Marketing Agency</span>
+      <a target="_blank" href="https://ashtonj7.github.io/week1-refactoring-challenge/">
+      <img src="./assets/images/project1.png" alt=""></a>
     </section>
     <section class="card">
       <span data-descr="Website advertising a hair Salon, created using HTML & CSS using the bootstrp framework"> Birmingham Hair Salon</span>
@@ -124,16 +124,18 @@
 </section>
 </section>
 
-  <section class ="fourth-page">
+  <section id ="fourth-page">
     <section class ="contact">
       <h2>Contact<span class ="header-color">.</span></h2>
       <section class ="contact-text">
       <h4>Feel free to contact me by submitting the form below and I will get back to you as soon as possible</h4>
       <div class ="social-media">
-        <p>Alternatively get in touch with me via social media or email<br><br></p>
-     
-  <img class = "github" src="./assets/images/github.png">
-  <img class = "linkedin" src="./assets/images/linkedin.png">
+        <p>Alternatively get in touch with me via social media or email<br><br>
+        ashtonkabote@gmail.com</p>
+        <a target="_blank" href="https://github.com/AshtonJ7">
+  <img class = "github" src="./assets/images/github.png"></a>
+  <a target="_blank" href="https://www.linkedin.com/in/ashton-kabote-473395269/">
+  <img class = "linkedin" src="./assets/images/linkedin.png"></a>
   <img class = "google+" src="./assets/images/google+.png">
 </div> 
       <form>
@@ -149,8 +151,8 @@
           <label for="expertise">Please select the reason you're making an enquiry:</label>
           <select id="expertise">
             <option>General enquiry</option>
-            <option>I'm interested in you for a job</option>
-            <option selected>I'd like a quote for a project</option>
+            <option>Hiring/Recruitment</option>
+            <option selected>Quote for a project</option>
           </select>
         </p>
         <p>
