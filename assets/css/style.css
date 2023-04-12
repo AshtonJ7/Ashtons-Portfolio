@@ -1,8 +1,13 @@
 * {
-    margin: 0px; 
-    padding: 0px;
     box-sizing: border-box;
 }
+ /* Two shades of blue where used throughout this project
+ light refers to the light shade of blue, dark refers to the darker*/
+:root {
+  --light: #93C6E7;
+  --dark: #94BFCD;
+}
+
 main {
 font-family: 'Poppins', sans-serif;
 }
@@ -21,13 +26,13 @@ right: 20px;
 
 nav a {
   font-size: 22px;
-    color: #93C6E7;
+    color: var(--light);
     padding: 14px 20px;
     text-decoration: none;
   }
 
 nav a:hover {
-  background-color: #93C6E7;
+  background-color: var(--light);
   color: white;
 }
 
@@ -57,7 +62,7 @@ h1{
 }
 
 .header-color {
-    color: #93C6E7;
+    color: var(--light);
 }
 .intro-text p{
     margin-top: 5px;
@@ -69,16 +74,16 @@ h1{
     padding: 50px 0px 0px 0px;
 }
 .cta-about {
-    border: 2px solid 	#94BFCD;
+    border: 2px solid 	var(--dark);
     background: transparent;
-    color:	#94BFCD;
+    color:	var(--dark);
     width: 150px;
     height: 50px;
     cursor: pointer;
     font-size: 16px;
 }
 .cta-portfolio {
-    background:	#94BFCD;
+    background:	var(--dark);
     width: 150px;
     height: 50px;
     cursor: pointer;
@@ -324,12 +329,13 @@ h3 {
   }
   
   button {
-    padding: 1% 2%;
-    color: #fff;
-    background-color: #93C6E7;
-    border: none;
-    outline: none;
+    background:	var(--dark);
+    width: 150px;
+    height: 50px;
     cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
   }
   
   /* It styles the drop down menu selector/image */
@@ -355,7 +361,7 @@ h3 {
     border: 1.2px solid #b9C6ae;
   }
   
-  .text-input:hover, .checkbox:hover, 
+  .text-input:hover, 
   select:hover, button:hover {
     box-shadow: 0 0 5px #999;
   }
@@ -380,14 +386,37 @@ h3 {
     width:200px;
   }
   
-  
+    /*footer*/
+
   footer {
     display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: #93C6E7;
+    justify-content:space-around;
+    padding: 1%;
+    background-color: var(--light);
     color: #fff;
   }
+
+
+footer p {
+  font-size: 22px;
+}
+
+/* Footer social */
+  .footer-social ul {
+    display: inline-flex;
+}
+.footer-social li {
+  font-size: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+} 
+
+.footer-social ul li a:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+
   
   @media screen and (max-width: 768px) {
     header {
