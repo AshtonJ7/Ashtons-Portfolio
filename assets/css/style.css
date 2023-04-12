@@ -405,10 +405,11 @@ footer p {
   .footer-social ul {
     display: inline-flex;
 }
-.footer-social li {
+.footer-social li a {
   font-size: 30px;
   padding-right: 10px;
   padding-left: 10px;
+  color: black;
 } 
 
 .footer-social ul li a:hover {
