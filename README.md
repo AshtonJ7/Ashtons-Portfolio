@@ -1,5 +1,7 @@
 # Ashtons-Portfolio
 
+A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it.
+
 ## User Story
 
 ```
@@ -28,3 +30,20 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+
+
+## Installation
+
+N/A
+
+## Usage
+
+A portfolio of work can showcase your skills and talents is as imporant as resume. People who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search.
+
+## Credits
+
+N/A
+
+## License
+
+N/A
