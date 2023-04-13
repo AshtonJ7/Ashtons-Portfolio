@@ -31,11 +31,6 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-
-## Installation
-
-N/A
-
 ## Usage
 
 A portfolio of work can showcase your skills and talents is as imporant as resume. People who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search.
@@ -47,3 +42,10 @@ N/A
 ## License
 
 N/A
+
+## 🔗 Links
+https://ashtonj7.github.io/Ashtons-Portfolio/
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/62944042/231884246-3856e01c-1aba-4cff-a7e9-2d80ace9caab.png)
